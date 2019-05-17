@@ -1,7 +1,7 @@
 ## substance 学习资料
 ![Substance_Painter_Orc](https://support.allegorithmic.com/documentation/spdoc/files/20316164/170459743/2/1536351466340/Substance_Painter_Orc.jpg)
-1. https://academy.substance3d.com/ 中文教材
-2. prb引导文档
+1. https://academy.substance3d.com/ 中文教材(点右上角中文)
+2. prb引导文档(点右上角中文)
 >* https://academy.substance3d.com/courses/the-pbr-guide-part-1
 >* https://academy.substance3d.com/courses/the-pbr-guide-part-2
 
@@ -25,7 +25,7 @@
 ##### 动作状态机
 
 ##### 爬墙
->[youtobe](https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O)
+>https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O
 ##### 游泳
 
 ## [镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html) 角色控制器
