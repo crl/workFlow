@@ -11,21 +11,26 @@
 >* [Unity的PBR扩展](https://zhuanlan.zhihu.com/p/50822664) [git](https://github.com/chenyong2github/ExtendStandard)
 
 
-## 换肤捏脸调色 换装(包含顶点mask)
+## 换肤捏脸调色 换装
 1. uma方案 
 > https://www.youtube.com/playlist?list=PLkDHFObfS19zFVfbrfB14P-u5QJJQyvtP
+>* 换装 (格位,是否替换其它格位或部件,是否隐藏其它格位或部件,包含顶点mask)
+>* 整体换(如变身)
+>* 换色
+>* 捏骨骼
+>* 等等 单纯看演示的话 考虑的挺周到的,并且接合也合理
 2. 天刀的说明 
-> http://games.sina.com.cn/o/z/wuxia/2015-10-15/fxivsch3599438.shtml
+>* http://games.sina.com.cn/o/z/wuxia/2015-10-15/fxivsch3599438.shtml
 3. ue4 《Honey Select》捏人剖析
-> https://zhuanlan.zhihu.com/p/28471808
+>* https://zhuanlan.zhihu.com/p/28471808
 
 ##### 表情
 1. Blend Shapes (由dcc工具导出,skinMesh.SetBlendShapeWeight)
->https://zhuanlan.zhihu.com/p/58631750
+>* https://zhuanlan.zhihu.com/p/58631750
 
 ##### 调色
 1. hsv
->https://zhuanlan.zhihu.com/p/52147126
+>* https://zhuanlan.zhihu.com/p/52147126
 <pre>
 half bias = 0.1f;
 half4 mask = tex2D(_RecolorMask, uv);
@@ -39,16 +44,20 @@ DyeColor = HSV2RGB (RGB2HSV(BaseColor) + HSVOffset)
 
 ## Human
 1. ue4中的
->https://docs.unrealengine.com/en-us/Engine/Rendering/Materials/HowTo/Human_Skin 
->https://docs.unrealengine.com/en-us/Resources/Showcases/PhotorealisticCharacter
->https://docs.unrealengine.com/en-us/Resources/Showcases/DigitalHumans
+>* https://docs.unrealengine.com/en-us/Engine/Rendering/Materials/HowTo/Human_Skin 
+>* https://docs.unrealengine.com/en-us/Resources/Showcases/PhotorealisticCharacter
+>* https://docs.unrealengine.com/en-us/Resources/Showcases/DigitalHumans
 2. https://renderman.pixar.com/louise
 3. https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch14.html 
 4. https://80.lv/articles/secrets-of-human-shaders-in-ue4/ 一个美术ue4里的,但我觉得主要还是画的好
 5. [lux.git 源码](https://github.com/larsbertram69/Lux/tree/master/Lux%20Shader/Human)
 
 ##### 皮肤
->油脂层 透光性 皮肤泛红 SSS (核心主要是皮肤要分清楚,把漫反射的阴影替换成血色过渡,再加一个次表面散色,最后一个模糊权重过渡)
+>* 油脂层
+>* 透光性
+>* 皮肤泛红
+>* SSS
+>* 核心主要是皮肤要分清楚,把漫反射的阴影替换成血色过渡,再加一个次表面散色,最后一个模糊权重过渡
 ##### 头发
 >高光切线法 双层高光 透明度 AlphaTest 做多次的pass
 1. [Kajiya切线高光法](http://web.engr.oregonstate.edu/~mjb/cs519/Projects/Papers/HairRendering.pdf)
@@ -61,7 +70,12 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 </pre>
 2. 延伸 https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter23.html 加了物理
 ##### 眼睛
->分层 瞳孔 眼白 泪腺 角膜(高光) 睫毛
+>分层
+>* 瞳孔
+>* 眼白
+>* 泪腺
+>* 角膜(高光)
+>* 睫毛
 1. [substance源文件](https://share.substance3d.com/libraries/2432)
 ##### 布料
 1. 相应的节点约束 (线性权重)
@@ -73,15 +87,15 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 1. https://www.unrealengine.com/zh-CN/blog/photoshop-generated-flow-maps?lang=zh-CN&sessionInvalidated=true ue中photoshop生成,当参考
 2. 另类 [做高光的各向异性](https://mp.weixin.qq.com/s?__biz=MzIyMzQzNDAyNg==&mid=2247484087&idx=1&sn=b2fa7f5af318785e72cd9428776093f8&chksm=e81f06f2df688fe441a4c7a6db229b69bbcd3de23a07e59670e8a97d41765b1be099e2e7a6cd&scene=21#wechat_redirect)
 ##### unity内部
->https://docs.unity3d.com/Manual/HOWTO-Water.html 可以当做参考
+>* https://docs.unity3d.com/Manual/HOWTO-Water.html 可以当做参考
 ##### assetStore (已买的)
->https://assetstore.unity.com/packages/vfx/shaders/realistic-water-33434 可交互
->https://assetstore.unity.com/packages/vfx/shaders/suimono-water-system-4387
+>* https://assetstore.unity.com/packages/vfx/shaders/realistic-water-33434 可交互
+>* https://assetstore.unity.com/packages/vfx/shaders/suimono-water-system-4387
 
 ## ik
->https://docs.unity3d.com/Manual/InverseKinematics.html
+>* https://docs.unity3d.com/Manual/InverseKinematics.html
 ##### 约束
->https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/index.html)
+>* https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/index.html)
 1. 武器收起与脱手 (不同的父级,动态调整权重)
 2. 其它 (我感觉其它的比较次要)
 
@@ -120,9 +134,9 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 5. Light Probe 来做动态物体的间接光
 6. emission 调hdr色
 7. [Postprocessing](https://docs.unity3d.com/Packages/com.unity.postprocessing@2.1/manual/index.html) 主要为(bloom/Lut) 
->1. [光照介绍](https://unity3d.com/learn/tutorials/topics/graphics/introduction-lighting-and-rendering?playlist=17102&_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
->2. 一个铁道的[demo内含源码](https://unity3d.com/learn/tutorials/s/creating-believable-visuals?_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
->3. [更好光线的7个小提示](https://lmhpoly.com/7-tips-for-better-lighting-in-unity/) 
+>* [光照介绍](https://unity3d.com/learn/tutorials/topics/graphics/introduction-lighting-and-rendering?playlist=17102&_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
+>* 一个铁道的[demo内含源码](https://unity3d.com/learn/tutorials/s/creating-believable-visuals?_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
+>* [更好光线的7个小提示](https://lmhpoly.com/7-tips-for-better-lighting-in-unity/) 
 
 ## 场景优化方案
 1. 遮蔽 (Occlusion culling)
@@ -144,5 +158,5 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 
 
 ## unity扩展编辑器
->https://www.youtube.com/playlist?list=PLs023Yclit4nom70pyx0wIxQLWf4Q7nIU
->https://anchan828.github.io/editor-manual/web/ 一日本人写的书
+>* https://www.youtube.com/playlist?list=PLs023Yclit4nom70pyx0wIxQLWf4Q7nIU
+>* https://anchan828.github.io/editor-manual/web/ 一日本人写的书
