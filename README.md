@@ -140,5 +140,6 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 3. sh9/vertexLight
 
 
-## 扩展编辑器
+## unity扩展编辑器
 >https://www.youtube.com/playlist?list=PLs023Yclit4nom70pyx0wIxQLWf4Q7nIU
+>https://anchan828.github.io/editor-manual/web/ 一日本人写的书
