@@ -23,7 +23,7 @@
 
 ## ik
 ##### 约束
-![multi_parent](https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/images/constraint_multi_parent/multi_parent.gif)
+![multi_parent](https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/images/bone_renderer/bone_looks.png)
 >https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/index.html
 ##### 动作状态机
 
