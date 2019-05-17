@@ -105,6 +105,7 @@ DyeColor = HSV2RGB (RGB2HSV(BaseColor) + HSVOffset)
 1. 遮蔽 (Occlusion culling)
 2. subScene
 4. 研究:是否有Scene存在的必要,如果没有,需自己记录lightmap信息,动态9宫加载lightmap(收集由mesh的lightmapIndex)
+>[lightmap拆分](https://www.cnblogs.com/fishyu/p/7703812.html)
 5. 开关投/接 阴影 反射球 等， 是否有必要动态合并(使文件变大,如果做超大场景 就会浪费很多很多的东西)
 6. 阴影级数 尽量降级2层
 7. lod 是否有必要 (理论上是超必要)
