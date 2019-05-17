@@ -18,24 +18,19 @@
 
 
 ## 水
-##### flowmap
-> https://mp.weixin.qq.com/s?__biz=MzIyMzQzNDAyNg==&mid=2247484087&idx=1&sn=b2fa7f5af318785e72cd9428776093f8&chksm=e81f06f2df688fe441a4c7a6db229b69bbcd3de23a07e59670e8a97d41765b1be099e2e7a6cd&scene=21#wechat_redirect
+##### [flowmap](https://mp.weixin.qq.com/s?__biz=MzIyMzQzNDAyNg==&mid=2247484087&idx=1&sn=b2fa7f5af318785e72cd9428776093f8&chksm=e81f06f2df688fe441a4c7a6db229b69bbcd3de23a07e59670e8a97d41765b1be099e2e7a6cd&scene=21#wechat_redirect)
 
 ## ik
-##### 约束
->https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/index.html
+##### [约束](https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/index.html)
 ##### 动作状态机
 
 ##### 爬墙
->https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O
+>[youtobe](https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O)
 ##### 游泳
 
-## 镜头 角色控制器
->https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html
-1. 基本 镜头 CinemachineFreeLook 可设置穿透遮挡体
->https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineFreeLook.html
-2. 状态 镜头 (由于动作的不同镜头的推进拉远等)
->https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineStateDrivenCamera.html
+## [镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html) 角色控制器
+1. [基本 镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineFreeLook.html) CinemachineFreeLook 可设置穿透遮挡体
+2. [状态 镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineStateDrivenCamera.html) (由于动作的不同镜头的推进拉远等)
 
 ## 场景
 1.navmesh
@@ -48,8 +43,10 @@
 4. Reflection Probe 来增加反射效果，也可用它来区分环境
 5. Light Probe 来做动态物体的间接光
 6. emission 调hdr色
-7. PostEffect 主要为(bloom/Lut) 
->https://docs.unity3d.com/Packages/com.unity.postprocessing@2.1/manual/index.html
+7. [PostEffect](https://docs.unity3d.com/Packages/com.unity.postprocessing@2.1/manual/index.html) 主要为(bloom/Lut) 
+>[更好光线的7个小提示](https://lmhpoly.com/7-tips-for-better-lighting-in-unity/)
+>一个铁道的[demo内含源码](https://unity3d.com/learn/tutorials/s/creating-believable-visuals?_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
+>[光照介绍](https://unity3d.com/learn/tutorials/topics/graphics/introduction-lighting-and-rendering?playlist=17102&_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
 
 ## 场景优化方案
 1. 遮蔽
