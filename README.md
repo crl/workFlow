@@ -4,6 +4,11 @@
 2. prb引导文档(点右上角中文)
 >* https://academy.substance3d.com/courses/the-pbr-guide-part-1
 >* https://academy.substance3d.com/courses/the-pbr-guide-part-2
+## pbr
+>* [基于物理的渲染](http://mecg.me/wiki/doku.php?id=cg:pbr)
+>* [GPU架构与渲染过程](http://mecg.me/wiki/doku.php?id=cg:gpu)
+##### 扩展
+>* [Unity的PBR扩展](https://zhuanlan.zhihu.com/p/50822664)
 
 
 ## 换肤捏脸调色 换装(包含顶点mask)
