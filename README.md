@@ -59,8 +59,9 @@ DyeColor = HSV2RGB (RGB2HSV(BaseColor) + HSVOffset)
 >* SSS
 >* 核心主要是皮肤要分清楚,把漫反射的阴影替换成血色过渡,再加一个次表面散色,最后一个模糊权重过渡
 ##### 头发
->高光切线法 双层高光 透明度 AlphaTest 做多次的pass
-1. [Kajiya切线高光法](http://web.engr.oregonstate.edu/~mjb/cs519/Projects/Papers/HairRendering.pdf)
+>* 高光切线法 双层高光 透明度 AlphaTest 做多次的pass
+>* 
+1. [Kajiya切线高光法.pdf](http://web.engr.oregonstate.edu/~mjb/cs519/Projects/Papers/HairRendering.pdf)
 <pre>
 //对切线在法线方向上进行偏移
 float3 ShitTangent(float3 T,float3 N,float shift){
@@ -69,6 +70,7 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 }
 </pre>
 2. 延伸 https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter23.html 加了物理
+3. 延伸[NVIDIAHairWorksIntegration.git](https://github.com/unity3d-jp/NVIDIAHairWorksIntegration)
 ##### 眼睛
 >分层
 >* 瞳孔
@@ -78,11 +80,20 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 >* 睫毛
 1. [substance源文件](https://share.substance3d.com/libraries/2432)
 ##### 布料
+>* [ClothParticlePhysics.git](https://github.com/jackisgames/ClothParticlePhysics)
+>* [Cloth-Simulation.git](https://github.com/danielshervheim/Cloth-Simulation)
 1. 相应的节点约束 (线性权重)
 2. 碰撞约束
 
 
 ## 水/天气
+##### 水
+>* [Optically-Realistic-Water.git](https://github.com/muckSponge/Optically-Realistic-Water)
+1. 有深度差别
+2. 有水面下的扭曲
+3. 泡沫
+4. 是否有交互
+5. 顶点动画
 ##### flowmap
 1. [photoshop生成](https://www.unrealengine.com/zh-CN/blog/photoshop-generated-flow-maps?lang=zh-CN&sessionInvalidated=true),当参考
 2. 另类 [做高光的各向异性](https://mp.weixin.qq.com/s?__biz=MzIyMzQzNDAyNg==&mid=2247484087&idx=1&sn=b2fa7f5af318785e72cd9428776093f8&chksm=e81f06f2df688fe441a4c7a6db229b69bbcd3de23a07e59670e8a97d41765b1be099e2e7a6cd&scene=21#wechat_redirect)
@@ -154,7 +165,7 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 
 ## 角色打光
 1. 镜头光
-2. Light Probe 动态取改
+2. Light Probe 动态取改 [LightProbeEditor.git](https://github.com/chenjd/LightProbeEditor)
 3. sh9/vertexLight
 
 
