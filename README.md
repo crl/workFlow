@@ -30,6 +30,13 @@
 >https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O
 ##### 游泳
 
+## 镜头 角色控制器
+>https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html
+1. 基本 镜头 CinemachineFreeLook 可设置穿透遮挡体
+>https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineFreeLook.html
+2. 状态 镜头 (由于动作的不同镜头的推进拉远等)
+>https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineStateDrivenCamera.html
+
 ## 场景
 1.navmesh
 2.collide
