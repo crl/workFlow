@@ -7,9 +7,18 @@
 
 
 ## 换肤捏脸调色 换装(包含顶点mask)
-1.
+1.uma方案 
+> https://www.youtube.com/playlist?list=PLkDHFObfS19zFVfbrfB14P-u5QJJQyvtP
 
 
 ## 水
 ### flowmap
-  > https://mp.weixin.qq.com/s?__biz=MzIyMzQzNDAyNg==&mid=2247484087&idx=1&sn=b2fa7f5af318785e72cd9428776093f8&chksm=e81f06f2df688fe441a4c7a6db229b69bbcd3de23a07e59670e8a97d41765b1be099e2e7a6cd&scene=21#wechat_redirect
+> https://mp.weixin.qq.com/s?__biz=MzIyMzQzNDAyNg==&mid=2247484087&idx=1&sn=b2fa7f5af318785e72cd9428776093f8&chksm=e81f06f2df688fe441a4c7a6db229b69bbcd3de23a07e59670e8a97d41765b1be099e2e7a6cd&scene=21#wechat_redirect
+
+## ik
+### 爬墙
+>https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O
+### 游泳
+
+## 扩展编辑器
+>https://www.youtube.com/playlist?list=PLs023Yclit4nom70pyx0wIxQLWf4Q7nIU
