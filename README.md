@@ -44,9 +44,9 @@
 5. Light Probe 来做动态物体的间接光
 6. emission 调hdr色
 7. [PostEffect](https://docs.unity3d.com/Packages/com.unity.postprocessing@2.1/manual/index.html) 主要为(bloom/Lut) 
->1. [更好光线的7个小提示](https://lmhpoly.com/7-tips-for-better-lighting-in-unity/)
+>1. [光照介绍](https://unity3d.com/learn/tutorials/topics/graphics/introduction-lighting-and-rendering?playlist=17102&_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
 >2. 一个铁道的[demo内含源码](https://unity3d.com/learn/tutorials/s/creating-believable-visuals?_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
->3. [光照介绍](https://unity3d.com/learn/tutorials/topics/graphics/introduction-lighting-and-rendering?playlist=17102&_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
+>3. [更好光线的7个小提示](https://lmhpoly.com/7-tips-for-better-lighting-in-unity/) 
 
 ## 场景优化方案
 1. 遮蔽
@@ -54,6 +54,9 @@
 
 
 ## 角色打光
+1. 镜头光
+2. Light Probe 动态取改
+3. sh9/vertexLight
 
 
 ## 扩展编辑器
