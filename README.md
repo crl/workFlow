@@ -8,7 +8,7 @@
 >* [基于物理的渲染](http://mecg.me/wiki/doku.php?id=cg:pbr)
 >* [GPU架构与渲染过程](http://mecg.me/wiki/doku.php?id=cg:gpu)
 ##### 扩展
->* [Unity的PBR扩展](https://zhuanlan.zhihu.com/p/50822664)
+>* [Unity的PBR扩展](https://zhuanlan.zhihu.com/p/50822664) [git](https://github.com/chenyong2github/ExtendStandard)
 
 
 ## 换肤捏脸调色 换装(包含顶点mask)
