@@ -7,12 +7,14 @@
 
 
 ## 换肤捏脸调色 换装(包含顶点mask)
-1.uma方案 
+1. uma方案 
 > https://www.youtube.com/playlist?list=PLkDHFObfS19zFVfbrfB14P-u5QJJQyvtP
-2.皮肤
-> 油脂层 透光性 皮肤泛红 SSS
-3.头发
-4.眼睛
+2. 皮肤
+>油脂层 透光性 皮肤泛红 SSS
+3. 头发
+>高光切线法 双层高光 透明度 AlphaTest 做多次的pass
+4. 眼睛
+>分层 瞳孔 眼白 泪腺 角膜(高光) 睫毛
 
 
 ## 水
