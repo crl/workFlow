@@ -86,7 +86,7 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 2. 其它 (我感觉其它的比较次要)
 
 ##### 动作状态机
-1. 可调整动作衔接 条件
+1. 可调整动作衔接时间及条件组合
 2. 切换优化级
 3. [AvatarMask](https://docs.unity3d.com/Manual/AnimationLayers.html) 上下身分离 (边跑 边跳 边表情 边招手等)
 4. [Retargeting](https://zhuanlan.zhihu.com/p/25064011) 动画重定向技术
@@ -104,15 +104,18 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 1. navmesh 分层 (导出给服务端使用,一般是导出高度图:(x,z的 y的高度),主要定位脚的位置)
 2. collider 物理碰撞(寻路navmesh可以做,但飞行跳跃 落点 有collider可做更细致的内容)
 3. 区域编辑 (进入触发,如天气变化,镜头等,一般会触发一个skill.amf文件,由技能编辑器产出)
-4. 剧情 (由timeLine完成,cinemachine来做镜头 Postprocessing做区域镜头特效)
+4. 剧情
 5. npc/monster 定位
 6. 草/水/风/粒子系统 动有东西
 7. 触发关联 (如门与机关)
 
+## 剧情
+>由timeLine完成,cinemachine来做镜头 Postprocessing做区域镜头特效
+
 ## 场景效果
 1. linear space
 2. 烘培
-3. HDR 天空球
+3. HDRI 天空球
 4. Reflection Probe 来增加反射效果，也可用它来区分环境
 5. Light Probe 来做动态物体的间接光
 6. emission 调hdr色
