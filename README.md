@@ -22,6 +22,9 @@
 > https://mp.weixin.qq.com/s?__biz=MzIyMzQzNDAyNg==&mid=2247484087&idx=1&sn=b2fa7f5af318785e72cd9428776093f8&chksm=e81f06f2df688fe441a4c7a6db229b69bbcd3de23a07e59670e8a97d41765b1be099e2e7a6cd&scene=21#wechat_redirect
 
 ## ik
+##### 约束
+![multi_parent](https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/images/constraint_multi_parent/multi_parent.gif)
+>https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/index.html
 ##### 动作状态机
 
 ##### 爬墙
