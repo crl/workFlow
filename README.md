@@ -63,6 +63,9 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 ##### 眼睛
 >分层 瞳孔 眼白 泪腺 角膜(高光) 睫毛
 1. [substance源文件](https://share.substance3d.com/libraries/2432)
+##### 布料
+1. 相应的节点约束 (线性权重)
+2. 碰撞约束
 
 
 ## 水/天气
@@ -81,9 +84,6 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 >https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/index.html)
 1. 武器收起与脱手 (不同的父级,动态调整权重)
 2. 其它 (我感觉其它的比较次要)
-##### 布料
-1. 相应的节点约束 (线性权重)
-2. 碰撞约束
 
 ##### 动作状态机
 1. 可调整动作衔接 条件
