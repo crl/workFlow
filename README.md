@@ -60,7 +60,7 @@ DyeColor = HSV2RGB (RGB2HSV(BaseColor) + HSVOffset)
 >* 核心主要是皮肤要分清楚,把漫反射的阴影替换成血色过渡,再加一个次表面散色,最后一个模糊权重过渡
 ##### 头发
 >* 高光切线法 双层高光 透明度 AlphaTest 做多次的pass
->* 
+>* [UnityHairShader.git](https://github.com/AdamFrisby/UnityHairShader)
 1. [Kajiya切线高光法.pdf](http://web.engr.oregonstate.edu/~mjb/cs519/Projects/Papers/HairRendering.pdf)
 <pre>
 //对切线在法线方向上进行偏移
@@ -85,6 +85,48 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 1. 相应的节点约束 (线性权重)
 2. 碰撞约束
 
+## ik
+>* https://docs.unity3d.com/Manual/InverseKinematics.html
+##### 约束
+>* https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/index.html)
+1. 武器收起与脱手 (不同的父级,动态调整权重)
+2. 其它 (我感觉其它的比较次要)
+
+##### 动作状态机
+1. 可调整动作衔接时间及条件组合
+2. 切换优化级
+3. [AvatarMask](https://docs.unity3d.com/Manual/AnimationLayers.html) 上下身分离 (边跑 边跳 边表情 边招手等)
+4. [Retargeting](https://zhuanlan.zhihu.com/p/25064011) 动画重定向技术
+5. [TargetMatching](https://docs.unity3d.com/Manual/TargetMatching.html) 动作与位置的对齐操作(如翻墙,美术是做了个动作，但墙位置及高度会有所不同)
+
+##### 爬墙
+>https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O
+##### 游泳
+##### Ragdoll
+1.工具化
+
+
+
+## [镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html) 角色控制器
+1. [基本 镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineFreeLook.html) CinemachineFreeLook 可设置穿透遮挡体
+2. [状态 镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineStateDrivenCamera.html) (由于动作的不同镜头的推进拉远等)
+
+## 场景
+1. navmesh 分层:雪地/草地/水面 (导出给服务端使用,一般是导出高度图:(x,z的 y的高度),主要定位脚的位置)
+2. collider 物理碰撞(寻路navmesh可以做,但飞行跳跃 落点 有collider可做更细致的内容)
+3. 区域编辑 (进入触发,如天气变化,镜头等,一般会触发一个skill.amf文件,由技能编辑器产出)
+4. 剧情
+5. npc/monster 定位
+6. 草/水/风/粒子系统 动有东西
+7. 触发关联 (如门与机关)
+
+## 天气系统
+1. 时间变化 (白天黑夜)
+2. 天气变化 (风雨雷电,地表有积水,地表被雪覆盖)
+3. 等等
+
+## 交互草
+>* [GrassProject.git](https://github.com/toninhoPinto/GrassProject)
 
 ## 水/天气
 ##### 水
@@ -103,40 +145,6 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 ##### assetStore (已买的)
 >* https://assetstore.unity.com/packages/vfx/shaders/realistic-water-33434 可交互
 >* https://assetstore.unity.com/packages/vfx/shaders/suimono-water-system-4387
-
-## ik
->* https://docs.unity3d.com/Manual/InverseKinematics.html
-##### 约束
->* https://docs.unity3d.com/Packages/com.unity.animation.rigging@0.2/manual/index.html)
-1. 武器收起与脱手 (不同的父级,动态调整权重)
-2. 其它 (我感觉其它的比较次要)
-
-##### 动作状态机
-1. 可调整动作衔接时间及条件组合
-2. 切换优化级
-3. [AvatarMask](https://docs.unity3d.com/Manual/AnimationLayers.html) 上下身分离 (边跑 边跳 边表情 边招手等)
-4. [Retargeting](https://zhuanlan.zhihu.com/p/25064011) 动画重定向技术
-5. [TargetMatching](https://docs.unity3d.com/Manual/TargetMatching.html) 动作与位置的对齐操作(如翻墙,美术是做了个动作，但墙位置及高度会有所不同)
-
-##### 爬墙
->https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O
-##### 游泳
-
-## [镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html) 角色控制器
-1. [基本 镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineFreeLook.html) CinemachineFreeLook 可设置穿透遮挡体
-2. [状态 镜头](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/CinemachineStateDrivenCamera.html) (由于动作的不同镜头的推进拉远等)
-
-## 场景
-1. navmesh 分层 (导出给服务端使用,一般是导出高度图:(x,z的 y的高度),主要定位脚的位置)
-2. collider 物理碰撞(寻路navmesh可以做,但飞行跳跃 落点 有collider可做更细致的内容)
-3. 区域编辑 (进入触发,如天气变化,镜头等,一般会触发一个skill.amf文件,由技能编辑器产出)
-4. 剧情
-5. npc/monster 定位
-6. 草/水/风/粒子系统 动有东西
-7. 触发关联 (如门与机关)
-
-## 剧情
->由timeLine完成,cinemachine来做镜头 Postprocessing做区域镜头特效
 
 ## 场景效果
 1. linear space
@@ -167,6 +175,9 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 1. 镜头光
 2. Light Probe 动态取改 [LightProbeEditor.git](https://github.com/chenjd/LightProbeEditor)
 3. sh9/vertexLight
+
+## 剧情
+>由timeLine完成,cinemachine来做镜头 Postprocessing做区域镜头特效
 
 
 ## unity扩展编辑器
