@@ -128,7 +128,7 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 ## 交互草
 >* [GrassProject.git](https://github.com/toninhoPinto/GrassProject)
 
-## 水/天气
+## 水
 ##### 水
 >* [Optically-Realistic-Water.git](https://github.com/muckSponge/Optically-Realistic-Water)
 1. 有深度差别
