@@ -11,7 +11,8 @@
 >* [Unity的PBR扩展](https://zhuanlan.zhihu.com/p/50822664) [git](https://github.com/chenyong2github/ExtendStandard)
 
 
-## 换肤捏脸调色 换装
+## 换肤/捏脸/调色/换装
+##### 捏脸
 1. uma方案 
 > https://www.youtube.com/playlist?list=PLkDHFObfS19zFVfbrfB14P-u5QJJQyvtP
 >* 换装 (格位,是否替换其它格位或部件,是否隐藏其它格位或部件,包含顶点mask)
