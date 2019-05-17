@@ -28,5 +28,18 @@
 >https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O
 ##### 游泳
 
+
+## 场景
+1. linear space
+2. 烘培
+3. HDR 天空球
+4. Reflection Probe 来增加反射效果，也可用它来区分环境
+5. Light Probe 来做动态物体的间接光
+6. emission 调hdr色
+7. PostEffect 主要为(bloom/Lut) 
+
+## 角色打光
+
+
 ## 扩展编辑器
 >https://www.youtube.com/playlist?list=PLs023Yclit4nom70pyx0wIxQLWf4Q7nIU
