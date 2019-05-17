@@ -37,12 +37,32 @@ int maskIndex = (int)(step(bias, mask.r)
 DyeColor = HSV2RGB (RGB2HSV(BaseColor) + HSVOffset)
 </pre>
 
+## Human
+1. ue4中的
+>https://docs.unrealengine.com/en-us/Engine/Rendering/Materials/HowTo/Human_Skin 
+>https://docs.unrealengine.com/en-us/Resources/Showcases/PhotorealisticCharacter
+>https://docs.unrealengine.com/en-us/Resources/Showcases/DigitalHumans
+2. https://renderman.pixar.com/louise
+3. https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch14.html 
+4. https://80.lv/articles/secrets-of-human-shaders-in-ue4/ 一个美术ue4里的,但我觉得主要还是画的好
+5. [lux.git 源码](https://github.com/larsbertram69/Lux/tree/master/Lux%20Shader/Human)
+
 ##### 皮肤
->油脂层 透光性 皮肤泛红 SSS
+>油脂层 透光性 皮肤泛红 SSS (核心主要是皮肤要分清楚,把漫反射的阴影替换成血色过渡,再加一个次表面散色,最后一个模糊权重过渡)
 ##### 头发
 >高光切线法 双层高光 透明度 AlphaTest 做多次的pass
+1. [Kajiya切线高光法](http://web.engr.oregonstate.edu/~mjb/cs519/Projects/Papers/HairRendering.pdf)
+<pre>
+//对切线在法线方向上进行偏移
+float3 ShitTangent(float3 T,float3 N,float shift){
+  float3 shiftedT=T+shift*N;
+  return normalize(shiftedT);
+}
+</pre>
+2. 延伸 https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter23.html 加了物理
 ##### 眼睛
 >分层 瞳孔 眼白 泪腺 角膜(高光) 睫毛
+1. [substance源文件](https://share.substance3d.com/libraries/2432)
 
 
 ## 水/天气
