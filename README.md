@@ -32,7 +32,7 @@
 ##### 调色
 1. hsv
 >* https://zhuanlan.zhihu.com/p/52147126
-<pre>
+```shaderlab
 half bias = 0.1f;
 half4 mask = tex2D(_RecolorMask, uv);
 int maskIndex = (int)(step(bias, mask.r)
@@ -41,8 +41,7 @@ int maskIndex = (int)(step(bias, mask.r)
 	
 //使用hsv进入混色	
 DyeColor = HSV2RGB (RGB2HSV(BaseColor) + HSVOffset)
-</pre>
-
+```
 ## Human
 1. ue4中的
 >* https://docs.unrealengine.com/en-us/Engine/Rendering/Materials/HowTo/Human_Skin 
@@ -63,13 +62,13 @@ DyeColor = HSV2RGB (RGB2HSV(BaseColor) + HSVOffset)
 >* 高光切线法 双层高光 透明度 AlphaTest 做多次的pass
 >* [UnityHairShader.git](https://github.com/AdamFrisby/UnityHairShader)
 1. [Kajiya切线高光法.pdf](http://web.engr.oregonstate.edu/~mjb/cs519/Projects/Papers/HairRendering.pdf)
-<pre>
+```shaderlab
 //对切线在法线方向上进行偏移
 float3 ShitTangent(float3 T,float3 N,float shift){
   float3 shiftedT=T+shift*N;
   return normalize(shiftedT);
 }
-</pre>
+```
 2. 延伸 https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter23.html 加了物理
 3. 延伸[NVIDIAHairWorksIntegration.git](https://github.com/unity3d-jp/NVIDIAHairWorksIntegration)
 ##### 眼睛
