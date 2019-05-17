@@ -14,11 +14,34 @@
 ## 换肤捏脸调色 换装(包含顶点mask)
 1. uma方案 
 > https://www.youtube.com/playlist?list=PLkDHFObfS19zFVfbrfB14P-u5QJJQyvtP
-2. 皮肤
+2. 天刀的说明 
+> http://games.sina.com.cn/o/z/wuxia/2015-10-15/fxivsch3599438.shtml
+3. ue4 《Honey Select》捏人剖析
+> https://zhuanlan.zhihu.com/p/28471808
+
+##### 表情
+1. Blend Shapes (由dcc工具导出,skinMesh.SetBlendShapeWeight)
+>https://zhuanlan.zhihu.com/p/58631750
+
+##### 调色
+1. hsv
+>https://zhuanlan.zhihu.com/p/52147126
+<pre>
+half bias = 0.1f;
+half4 mask = tex2D(_RecolorMask, uv);
+int maskIndex = (int)(step(bias, mask.r)
+	+ step(bias, mask.g) * 2
+	+ step(bias, mask.b) * 4);
+	
+//使用hsv进入混色	
+DyeColor = HSV2RGB (RGB2HSV(BaseColor) + HSVOffset)
+</pre>
+
+##### 皮肤
 >油脂层 透光性 皮肤泛红 SSS
-3. 头发
+##### 头发
 >高光切线法 双层高光 透明度 AlphaTest 做多次的pass
-4. 眼睛
+##### 眼睛
 >分层 瞳孔 眼白 泪腺 角膜(高光) 睫毛
 
 
