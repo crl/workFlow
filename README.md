@@ -28,8 +28,11 @@
 >https://www.youtube.com/playlist?list=PL47vwJBRNh1xzEvcLvXoJvjLcr1h0j-1O
 ##### 游泳
 
-
 ## 场景
+1.navmesh
+2.collide
+
+## 场景效果
 1. linear space
 2. 烘培
 3. HDR 天空球
@@ -37,6 +40,11 @@
 5. Light Probe 来做动态物体的间接光
 6. emission 调hdr色
 7. PostEffect 主要为(bloom/Lut) 
+
+## 场景优化方案
+1. 遮蔽
+2. subScene
+
 
 ## 角色打光
 
