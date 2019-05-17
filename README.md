@@ -49,6 +49,7 @@
 5. Light Probe 来做动态物体的间接光
 6. emission 调hdr色
 7. PostEffect 主要为(bloom/Lut) 
+>https://docs.unity3d.com/Packages/com.unity.postprocessing@2.1/manual/index.html
 
 ## 场景优化方案
 1. 遮蔽
