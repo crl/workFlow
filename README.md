@@ -84,8 +84,9 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 
 ## 水/天气
 ##### flowmap
-1. https://www.unrealengine.com/zh-CN/blog/photoshop-generated-flow-maps?lang=zh-CN&sessionInvalidated=true ue中photoshop生成,当参考
+1. [photoshop生成](https://www.unrealengine.com/zh-CN/blog/photoshop-generated-flow-maps?lang=zh-CN&sessionInvalidated=true),当参考
 2. 另类 [做高光的各向异性](https://mp.weixin.qq.com/s?__biz=MzIyMzQzNDAyNg==&mid=2247484087&idx=1&sn=b2fa7f5af318785e72cd9428776093f8&chksm=e81f06f2df688fe441a4c7a6db229b69bbcd3de23a07e59670e8a97d41765b1be099e2e7a6cd&scene=21#wechat_redirect)
+3. [substance制作](https://support.allegorithmic.com/documentation/spdoc/flow-map-painting-143327274.html)
 ##### unity内部
 >* https://docs.unity3d.com/Manual/HOWTO-Water.html 可以当做参考
 ##### assetStore (已买的)
