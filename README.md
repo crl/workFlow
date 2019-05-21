@@ -179,7 +179,14 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 ## 剧情
 >由timeLine完成,cinemachine来做镜头 Postprocessing做区域镜头特效
 
-
+## 犯的错误
+ 1. 对场景进行了静态合并 (research: StaticBatchingUtility进行运行时合并)
+  * 对于共用资源 产生了多份的合并资源 内存增大
+  * 对于ab打包，也产生了Scene特大问题
+  * 对资源需开启read/write
+ 2. 自动打包功能无法预览 (research:AbBrowse结合)
+ 3. and so on
+  
 ## unity扩展编辑器
 >* https://www.youtube.com/playlist?list=PLs023Yclit4nom70pyx0wIxQLWf4Q7nIU
 >* https://anchan828.github.io/editor-manual/web/ 一日本人写的书
