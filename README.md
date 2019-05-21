@@ -157,8 +157,7 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 >* [光照介绍](https://learn.unity.com/tutorial/intermediate-lighting-rendering)
 >* 一个铁道的[demo内含源码](https://unity3d.com/learn/tutorials/s/creating-believable-visuals?_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
 >* [更好光线的7个小提示](https://lmhpoly.com/7-tips-for-better-lighting-in-unity/) 
->* 自动Light Probe
- 1. [说明](https://blog.csdn.net/noligz/article/details/54916045) [git](https://github.com/gampixi/auto-light-probes)
+>* 自动Light Probe [说明](https://blog.csdn.net/noligz/article/details/54916045) [git](https://github.com/gampixi/auto-light-probes)
 
 ## 场景优化方案
 1. 遮蔽 (Occlusion culling)
