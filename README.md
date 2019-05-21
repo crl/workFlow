@@ -186,6 +186,7 @@ float3 ShitTangent(float3 T,float3 N,float shift){
   * 对资源需开启read/write
  2. 自动打包功能无法预览 (research:AbBrowse结合,再用AssetStudio查看什么东西比较大)
  3. 抽出了lightmap独立打 会使lightmap无效
+ 4. shader variants 太多 太大问题
  10. and so on
   
 ## unity扩展编辑器
