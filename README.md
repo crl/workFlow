@@ -184,7 +184,7 @@ float3 ShitTangent(float3 T,float3 N,float shift){
   * 对于共用资源 产生了多份的合并资源 内存增大
   * 对于ab打包，也产生了Scene特大问题
   * 对资源需开启read/write
- 2. 自动打包功能无法预览 (research:AbBrowse结合)
+ 2. 自动打包功能无法预览 (research:AbBrowse结合,再用AssetStudio查看什么东西比较大)
  3. 抽出了lightmap独立打 会使lightmap无效
  10. and so on
   
