@@ -154,9 +154,10 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 5. Light Probe 来做动态物体的间接光
 6. emission 调hdr色
 7. [Postprocessing](https://docs.unity3d.com/Packages/com.unity.postprocessing@2.1/manual/index.html) 主要为(bloom/Lut) 
->* [光照介绍](https://unity3d.com/learn/tutorials/topics/graphics/introduction-lighting-and-rendering?playlist=17102&_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
+>* [光照介绍](https://learn.unity.com/tutorial/intermediate-lighting-rendering)
 >* 一个铁道的[demo内含源码](https://unity3d.com/learn/tutorials/s/creating-believable-visuals?_ga=2.257319819.1060887464.1557711885-1438279476.1522757191)
 >* [更好光线的7个小提示](https://lmhpoly.com/7-tips-for-better-lighting-in-unity/) 
+>* 自动Light Probe [说明](https://blog.csdn.net/noligz/article/details/54916045) [git](https://github.com/gampixi/auto-light-probes)
 
 ## 场景优化方案
 1. 遮蔽 (Occlusion culling)
@@ -179,7 +180,16 @@ float3 ShitTangent(float3 T,float3 N,float shift){
 ## 剧情
 >由timeLine完成,cinemachine来做镜头 Postprocessing做区域镜头特效
 
-
+## 犯的错误
+ 1. 对场景进行了静态合并 (research: StaticBatchingUtility进行运行时合并)
+  * 对于共用资源 产生了多份的合并资源 内存增大
+  * 对于ab打包，也产生了Scene特大问题
+  * 对资源需开启read/write
+ 2. 自动打包功能无法预览 (research:AbBrowse结合,再用AssetStudio查看什么东西比较大)
+ 3. 抽出了lightmap独立打 会使lightmap无效
+ 4. shader variants 太多 太大问题
+ 10. and so on
+  
 ## unity扩展编辑器
 >* https://www.youtube.com/playlist?list=PLs023Yclit4nom70pyx0wIxQLWf4Q7nIU
 >* https://anchan828.github.io/editor-manual/web/ 一日本人写的书
