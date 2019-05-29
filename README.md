@@ -7,6 +7,7 @@
 ## pbr
 >* [基于物理的渲染](http://mecg.me/wiki/doku.php?id=cg:pbr)
 >* [GPU架构与渲染过程](http://mecg.me/wiki/doku.php?id=cg:gpu)
+>* [demo/source](http://artisaverb.info/PBT.html)
 ##### 扩展
 >* [Unity的PBR扩展](https://zhuanlan.zhihu.com/p/50822664) [git](https://github.com/chenyong2github/ExtendStandard)
 
