@@ -190,6 +190,15 @@ float3 ShitTangent(float3 T,float3 N,float shift){
  4. shader variants 太多 太大问题
  10. and so on
   
+ ## 技巧性方案
+ * 对美术与程序分离
+ * 分代码库 把需要绑定到gameObject上的独立库,把程序应用独立成库,这样基本的dll热更新 可直接在手机上热更新调试
+ * 做远程发布 逻辑代码dll,及assetbundle 服务,
+ * unity插件 svn tools lite unity上直接提交svn ,[ConsoleE]更方便调试调用堆栈
+ * 
+ 
+ 
+  
 ## unity扩展编辑器
 >* https://www.youtube.com/playlist?list=PLs023Yclit4nom70pyx0wIxQLWf4Q7nIU
 >* https://anchan828.github.io/editor-manual/web/ 一日本人写的书
